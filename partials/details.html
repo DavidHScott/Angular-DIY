@@ -1,0 +1,13 @@
+<section class="skillinfo">
+  <div class="skill cf" ng-model="skills">
+    <a href="#/details/{{prevItem}}" class="btn btn-left">&lt;</a>
+    <a href="#/details/{{nextItem}}" class="btn btn-right">&gt;</a>
+    <h1>{{skills[whichItem].title}}</h1>
+    <div class="info">
+      <h3>diy.org/skills/{{skills[whichItem].url}}</h3>
+      <img ng-src="http:{{skills[whichItem].images.medium}}" alt="Photo of {{skills[whichItem].title}}">
+      <div class="description">{{skills[whichItem].description}}</div>
+    </div>
+  </div>
+  <a href="index.html">&laquo; Back to search</a>
+</section>
