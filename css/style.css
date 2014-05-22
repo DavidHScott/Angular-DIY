@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     clear: both;
 }
 
-html {
+body {
   background-color: #97a6ac; 
   background-image: url(../images/skillpatternbg.png); 
 
@@ -221,13 +221,13 @@ a.small {
   outline: 0;
 }
 
-/* Artist List Styles */
+/*  List Styles */
 
 .skilllist {
   background: #EEE8D5;
-  width: 50%;
+  width: 80%;
   min-width: 290px;
-  max-width:350px;
+  max-width:550px;
   margin: 0 auto;
   margin-bottom: 30px;
   border-radius: 0 0 20px 20px;
@@ -289,15 +289,15 @@ a.small {
 .skillinfo {
   font-size: 1.1em;
   line-height: 160%;
-  background: #EEE8D5;
+  background: #EEE;
   color: #0F4150;
   width: 90%;
-  min-width: 320px;
+  min-width: 300px;
   max-width: 620px;
   margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 20px 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 20px;
   border-radius: 10px;
   z-index: 20;
 }
@@ -327,3 +327,7 @@ a.small {
   overflow: hidden;
 }
 
+.jumbotron {
+   background: #063642;
+  color: #EEE8D5;
+}

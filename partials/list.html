@@ -1,26 +1,26 @@
-<section class="skillpage">
-  <div class="search">
+<section class="container">
+  <div class="jumbotron">
     <h1>DIY Skills &amp; Challenges</h1>
-    <label>search: </label>
-    <input ng-model="query" placeholder="Search" autofocus>
+   <div class=form-group>
+    <input ng-model="query" placeholder="Search" autofocus class="form-control">
 
-    <label class="formgroup">by:
-      <select ng-model="skillOrder">
-        <option value="title">Skill Name</option>
+    <label>Sort by:
+      <select ng-model="skillOrder" class="form-control">
+        <option value="title" selected>Skill Name</option>
         <option value="stamp">Date Added</option>
       </select>
     </label>
 
-    <label class="formgroup">
-      <input type="radio" ng-model="direction" name="direction" checked>
-      ascending
-     </label>
-    <label class="formgroup">
+     <label>
+      <input type="radio"ng-model="direction" name="direction" checked>
+      <span class="glyphicon glyphicon-sort-by-alphabet"></span> Asc
+
       <input type="radio" ng-model="direction" name="direction" value="reverse">
-      descending
-    </label>
+    <span class="glyphicon glyphicon-sort-by-alphabet-alt"></span> Desc
+  </label>
    
   </div>
+      </div>
   <ul class="skilllist" ng-show="query">
     <li ng-animate="'animate'" class="skill cf" ng-repeat="item in skills | filter: query | orderBy: skillOrder:direction">
       <a href="#/details/{{skills.indexOf(item)}}">
